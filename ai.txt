@@ -1,0 +1,18 @@
+# ai.txt - Specific instructions for AI Crawlers and LLM Agents
+# This file provides guidance for RAG systems, ChatGPT, Claude, Perplexity, Gemini, etc.
+
+User-agent: *
+
+# High-density text content for complete grounding
+Content-path: /XERA1_COMPLETE_REFERENCE.md
+Content-type: text/markdown
+Description: Reference technique, fonctionnelle et operationnelle complete de la plateforme XERA1.
+
+# Main user documentation paths
+Content-path: /docs.html
+Content-path: /getting-started.html
+Content-path: /pro-pages.html
+Content-path: /messaging-and-network.html
+Content-path: /search-and-discovery.html
+Content-path: /trust-and-verification.html
+Content-path: /founding-team.html
