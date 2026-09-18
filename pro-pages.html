@@ -35,6 +35,42 @@
             name="twitter:image"
             content="https://docs.xera1.xyz/xera1_docs.jpeg"
         />
+        <link rel="alternate" type="text/markdown" href="XERA1_COMPLETE_REFERENCE.md" title="Documentation complète de XERA1 (Markdown)" />
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "TechArticle",
+                "headline": "Pro pages | XERA1 Docs",
+                "description": "Découvrez comment créer une page PRO XERA1, présenter votre activité et capter des leads qualifiés.",
+                "inLanguage": "fr",
+                "mainEntityOfPage": "https://docs.xera1.xyz/pro-pages.html",
+                "isPartOf": {
+                    "@type": "WebSite",
+                    "name": "XERA1 Docs",
+                    "url": "https://docs.xera1.xyz/"
+                }
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Documentation",
+                        "item": "https://docs.xera1.xyz/docs.html"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Pro pages",
+                        "item": "https://docs.xera1.xyz/pro-pages.html"
+                    }
+                ]
+            }
+        </script>
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
@@ -101,6 +137,14 @@
                             et présenter une trajectoire avec plus de clarté.
                         </p>
 
+                        <div class="note-box">
+                            <strong>Vérification :</strong> le workspace ne
+                            contient pas l’éditeur de page PRO ni le système de
+                            leads. Les champs exacts, les rôles d’administration
+                            et les permissions doivent être validés dans
+                            l’application déployée avant publication.
+                        </div>
+
                         <h2>1. Différence entre profil et page PRO</h2>
                         <p>
                             Le profil personnel met l’accent sur la progression,
@@ -155,28 +199,44 @@
                             recrutement, collaboration ou documentation.
                         </p>
 
-                        <ul>
-                            <li>
-                                <strong>Réservation de démo</strong> : Calendly,
-                                Cal.com ou un lien de booking.
-                            </li>
-                            <li>
-                                <strong>Lead capture B2B</strong> : formulaire
-                                de contact ou demande de qualification.
-                            </li>
-                            <li>
-                                <strong>Pitch deck</strong> : lien vers un
-                                document de présentation.
-                            </li>
-                            <li>
-                                <strong>GitHub / repo</strong> : pour un produit
-                                open source ou un prototype visible.
-                            </li>
-                            <li>
-                                <strong>Job board</strong> : pour postuler à des
-                                postes ou rejoindre une équipe.
-                            </li>
-                        </ul>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Objectif</th>
+                                    <th>Exemple de CTA</th>
+                                    <th>Risque à surveiller</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Réservation de démo</td>
+                                    <td>Calendly, Cal.com, booking</td>
+                                    <td>
+                                        lien non fonctionnel ou mauvais contexte
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Pitch deck</td>
+                                    <td>document de présentation</td>
+                                    <td>
+                                        document confidentiel exposé
+                                        publiquement
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Recrutement</td>
+                                    <td>postes et candidatures</td>
+                                    <td>
+                                        offres obsolètes ou accès non maîtrisés
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Externe</td>
+                                    <td>GitHub, Discord, site web</td>
+                                    <td>redirection vers le mauvais domaine</td>
+                                </tr>
+                            </tbody>
+                        </table>
 
                         <div class="code-block">
                             <pre><code>Exemple de CTA
@@ -208,13 +268,13 @@ Type : external</code></pre>
                             </li>
                         </ul>
 
-                        <h2>5. Skeletons et structure</h2>
+                        <h2>5. Rôles et administration</h2>
                         <p>
-                            Les skeletons permettent de garder la page élégante
-                            et stable pendant le chargement, tandis que les
-                            blocs de contenu se construisent progressivement.
-                            Cela évite les chocs visuels et améliore
-                            l’expérience globale.
+                            La gestion de la page PRO implique des admins,
+                            parfois plusieurs personnes, parfois une équipe. Les
+                            rôles, les invitations et les niveaux d’accès
+                            doivent être validés dans le produit réel avant de
+                            promettre une sécurité ou une gouvernance précise.
                         </p>
 
                         <div class="note-box">

@@ -35,6 +35,42 @@
             name="twitter:image"
             content="https://docs.xera1.xyz/xera1_docs.jpeg"
         />
+        <link rel="alternate" type="text/markdown" href="XERA1_COMPLETE_REFERENCE.md" title="Documentation complète de XERA1 (Markdown)" />
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "TechArticle",
+                "headline": "Search & discovery | XERA1 Docs",
+                "description": "Explorez le feed XERA1 et trouvez des builders, projets et preuves grâce à la recherche contextuelle.",
+                "inLanguage": "fr",
+                "mainEntityOfPage": "https://docs.xera1.xyz/search-and-discovery.html",
+                "isPartOf": {
+                    "@type": "WebSite",
+                    "name": "XERA1 Docs",
+                    "url": "https://docs.xera1.xyz/"
+                }
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Documentation",
+                        "item": "https://docs.xera1.xyz/docs.html"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Search & discovery",
+                        "item": "https://docs.xera1.xyz/search-and-discovery.html"
+                    }
+                ]
+            }
+        </script>
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
@@ -100,7 +136,61 @@
                             réellement.
                         </p>
 
-                        <h2>1. Le feed immersif</h2>
+                        <div class="note-box">
+                            <strong>Vérification :</strong> le dépôt contient
+                            une recherche documentaire locale et un assistant
+                            capable de lire les pages HTML/Markdown. La
+                            recherche produit, les catégories, les tendances et
+                            le feed social ne sont pas implémentés dans ce
+                            workspace et doivent être testés en production avant
+                            d’être présentés comme disponibles.
+                        </div>
+
+                        <h2>1. La recherche documentaire actuelle</h2>
+                        <p>
+                            Dans ce dépôt, la fonctionnalité visible est une
+                            recherche locale de documentation. Elle est activée
+                            par le bouton <strong>Search docs</strong> ou par
+                            <strong>Ctrl+K</strong> / <strong>Cmd+K</strong>.
+                            Elle ne traite pas les profils, les ARCs, les Traces
+                            ou le réseau productif de XERA1.
+                        </p>
+
+                        <ul>
+                            <li>index des pages HTML et Markdown ;</li>
+                            <li>filtres sur le texte de la documentation ;</li>
+                            <li>overlay de recherche local ;</li>
+                            <li>
+                                aucune persistance de l’historique utilisateur
+                                réelle.
+                            </li>
+                        </ul>
+
+                        <h2>2. La recherche produit cible</h2>
+                        <p>
+                            La version cible de XERA1 prévoit un moteur de
+                            recherche produit. Il doit distinguer :
+                        </p>
+
+                        <ul>
+                            <li>la recherche documentaire ;</li>
+                            <li>la recherche dans les profils et ARCs ;</li>
+                            <li>la recherche dans les preuves et jalons ;</li>
+                            <li>
+                                la recherche de personnes, entreprises et
+                                contenus pertinents.
+                            </li>
+                        </ul>
+
+                        <div class="callout">
+                            <strong>À confirmer :</strong> les catégories
+                            exactes, la commande <strong>/search</strong>, les
+                            données de tendances, la durée de conservation de 7
+                            jours et les règles de suppression doivent être
+                            validées dans le produit réel.
+                        </div>
+
+                        <h2>3. Feed immersif</h2>
                         <p>
                             Le feed immersif donne une expérience de lecture
                             plus profonde. Les contenus sont plus lisibles, plus
@@ -112,66 +202,60 @@
                             <li>navigation verticale et immersive,</li>
                             <li>focus sur la preuve publiée,</li>
                             <li>
-                                swipe / scroll adapté au contexte d’exploration,
+                                interaction avec un média ou une description,
                             </li>
                             <li>
-                                fermeture rapide par interaction ou gesture.
+                                fermeture rapide par geste ou bouton visible.
                             </li>
                         </ul>
 
-                        <div class="note-box">
-                            <strong>Note :</strong> Le feed est conçu pour
-                            valoriser la qualité du contenu et la progression
-                            observable, pas le volume de publication sans
-                            substance.
-                        </div>
-
-                        <h2>2. La command palette</h2>
+                        <h2>4. Historique et tendances</h2>
                         <p>
-                            La recherche rapide est accessible via la commande
-                            <strong>/search</strong> ou via la combinaison
-                            <strong>⌘K</strong>. Elle permet de retrouver un
-                            contenu actif, un profil, une catégorie ou une
-                            thématique.
+                            La documentation cible mentionne un historique de
+                            recherche éphémère et des tendances de recherche sur
+                            7 jours. Ces éléments sont utiles pour la
+                            recommandation, mais leur exactitude technique est à
+                            confirmer.
                         </p>
 
                         <ul>
-                            <li>recherche par catégories,</li>
-                            <li>mots-clés de projets,</li>
-                            <li>tendances du moment,</li>
-                            <li>historique de recherche récent.</li>
+                            <li>
+                                historique persistant au navigateur ou au compte
+                                ?
+                            </li>
+                            <li>
+                                suppression manuelle par <strong>×</strong> ou
+                                tous les termes ?
+                            </li>
+                            <li>
+                                tendances calculées par popularité, activité ou
+                                confiance ?
+                            </li>
+                            <li>
+                                période de 7 jours, 30 jours ou contexte réel ?
+                            </li>
                         </ul>
 
-                        <h2>3. Historique éphémère</h2>
-                        <p>
-                            L’historique de recherche est purgé automatiquement
-                            après 7 jours. Cela permet de garder une
-                            recommandation pertinente sans conserver des traces
-                            trop anciennes.
-                        </p>
-
-                        <div class="callout">
-                            <strong>Tip :</strong> Utilisez des requêtes
-                            précises comme “SaaS”, “open source”, “pitch deck”,
-                            ou le nom d’un domaine pour maximiser la qualité des
-                            résultats.
-                        </div>
-
-                        <h2>4. Découverte</h2>
+                        <h2>5. Découverte</h2>
                         <p>
                             Le moteur de découverte met en avant les profils et
                             contenus les plus cohérents avec vos intérêts, votre
-                            activité et les signaux de progression.
+                            activité et les signaux de progression. Cela n’est
+                            pas visible dans ce workspace, mais il s’agit d’un
+                            axe majeur de la plateforme XERA1.
                         </p>
 
-                        <ul>
-                            <li>contenus récents,</li>
-                            <li>builders actifs et crédibles,</li>
-                            <li>
-                                trajectoires alignées avec vos centres
-                                d’intérêt.
-                            </li>
-                        </ul>
+                        <h2>6. Vérification finale</h2>
+                        <p>
+                            Vous êtes prêt à utiliser la recherche XERA1 lorsque
+                            vous pouvez distinguer la recherche documentaire de
+                            la recherche produit, identifier les catégories et
+                            les filtres, expliquer le principe de contenu
+                            immersif, et comprendre que les tendances et
+                            l’historique restent
+                            <strong>à confirmer</strong> tant qu’ils n’ont pas
+                            été testés en production.
+                        </p>
                     </article>
                 </div>
             </main>

@@ -49,8 +49,29 @@ La clé reste côté serveur et n'est jamais envoyée au navigateur. En producti
 
 Vercel détecte automatiquement `api/ask.js` et `api/health.js`. Les pages statiques restent servies directement par Vercel, et le navigateur appelle `/api/ask` sur le même domaine.
 
+## Règle éditoriale de confiance
+
+La documentation doit distinguer clairement ce qui est :
+
+- **Vérifié dans ce dépôt** : visible dans le code local et fonctionnelment présent dans ce workspace.
+- **Documenté, mais non vérifiable ici** : décrit dans la référence ou dans les docs, mais absent de l’application réellement livrée dans ce dépôt.
+- **À confirmer avant publication** : annoncé ou souhaité, mais sans éléments suffisants pour garantir son comportement dans le produit final.
+
+Le dépôt contient surtout le site documentaire, son moteur de recherche et son assistant Gemini. Il ne contient pas l’application XERA1 complète. Les pages doivent donc être lues comme un guide cible, pas comme une preuve de disponibilité absolue de toutes les fonctionnalités.
+
+## Assistant XERA1 AI
+
+L’assistant documentaire doit :
+
+- répondre en français et de manière concise ;
+- s’appuyer sur les sources locales du dépôt ;
+- distinguer clairement les affirmations vérifiées, documentées ou simplement projetées ;
+- indiquer clairement si une fonctionnalité n’est pas présente dans ce workspace ;
+- éviter de promettre des comportements non vérifiés dans l’application déployée.
+
 ## Conventions
 
 - Le contenu est écrit en français.
 - Le style privilégie la clarté, les étapes, les blocs de code et les callouts.
 - La documentation reste alignée sur les fonctionnalités réellement implémentées dans l'application XERA1.
+- Les écrans et routes non présents dans ce dossier sont explicitement marqués comme « à confirmer » ou « non vérifiable ici ».

@@ -38,6 +38,42 @@
             name="twitter:image"
             content="https://docs.xera1.xyz/xera1_docs.jpeg"
         />
+        <link rel="alternate" type="text/markdown" href="XERA1_COMPLETE_REFERENCE.md" title="Documentation complète de XERA1 (Markdown)" />
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "TechArticle",
+                "headline": "Getting started | XERA1 Docs",
+                "description": "Créez votre compte XERA1, publiez votre première preuve et construisez une trajectoire publique crédible.",
+                "inLanguage": "fr",
+                "mainEntityOfPage": "https://docs.xera1.xyz/getting-started.html",
+                "isPartOf": {
+                    "@type": "WebSite",
+                    "name": "XERA1 Docs",
+                    "url": "https://docs.xera1.xyz/"
+                }
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Documentation",
+                        "item": "https://docs.xera1.xyz/docs.html"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Getting started",
+                        "item": "https://docs.xera1.xyz/getting-started.html"
+                    }
+                ]
+            }
+        </script>
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
@@ -107,20 +143,44 @@
                         </p>
 
                         <div class="note-box">
-                            <strong>Note :</strong> Si vous êtes un builder, un
-                            créateur, un freelance ou une startup en phase de
-                            validation, XERA1 vous aide à transformer votre
-                            travail en une présence publique crédible.
+                            <strong>Note de vérification :</strong> ce dépôt
+                            documente le parcours cible de XERA1, mais ne
+                            contient pas l’application complète. L’inscription,
+                            l’authentification, l’OAuth et les flux de session
+                            doivent être validés dans le produit réel avant
+                            d’être présentés comme absolument disponibles.
                         </div>
 
-                        <h2>1. Créer son compte</h2>
+                        <h2>1. Ce qui est vérifiable dans ce dépôt</h2>
+                        <ul>
+                            <li>la navigation documentaire statique ;</li>
+                            <li>la recherche des pages HTML et Markdown ;</li>
+                            <li>
+                                l’assistant documentaire connecté à Gemini ;
+                            </li>
+                            <li>l’API locale de santé du service ;</li>
+                            <li>
+                                la structure générale du site de documentation.
+                            </li>
+                        </ul>
+
+                        <div class="callout">
+                            <strong>Important :</strong> les flux de compte,
+                            d’email, de magic link, de session, d’OAuth et de
+                            suppression de compte restent
+                            <strong>à confirmer</strong> avant publication comme
+                            procédures garanties.
+                        </div>
+
+                        <h2>2. Créer son compte</h2>
                         <ol>
                             <li>
                                 Rendez-vous sur la page d’inscription de XERA1.
                             </li>
                             <li>
                                 Choisissez l’une des méthodes suivantes : email,
-                                magic link, ou OTP.
+                                magic link, ou OTP, si elles sont visibles dans
+                                l’interface.
                             </li>
                             <li>
                                 Indiquez votre identité visible et votre domaine
@@ -136,11 +196,11 @@
                             <pre><code>Étapes rapides
 1. Ouvrez la page d’inscription
 2. Saisissez votre email
-3. Validez l'email reçu
+3. Validez le message reçu
 4. Complétez votre profil</code></pre>
                         </div>
 
-                        <h2>2. Compléter l’onboarding</h2>
+                        <h2>3. Compléter l’onboarding</h2>
                         <p>
                             Une fois connecté, complétez votre profil comme un
                             premier système de crédibilité. Votre identité doit
@@ -165,9 +225,14 @@
                                 <strong>Domaine</strong> : développeur,
                                 créateur, entrepreneur, étudiant, ou autre.
                             </li>
+                            <li>
+                                <strong>Liens publics</strong> : ajoutez
+                                uniquement les profils que vous souhaitez
+                                exposer.
+                            </li>
                         </ul>
 
-                        <h2>3. Créer un premier ARC</h2>
+                        <h2>4. Créer un premier ARC</h2>
                         <p>
                             Un ARC est le conteneur d’un projet ou d’une
                             ambition. C’est la structure qui donne du sens à
@@ -194,7 +259,7 @@
                             une refonte de produit ou un lancement de service.
                         </div>
 
-                        <h2>4. Publier sa première preuve</h2>
+                        <h2>5. Publier sa première preuve</h2>
                         <p>
                             La publication d’une preuve ne consiste pas à
                             “poster un statut”. Votre message doit décrire un
@@ -226,7 +291,7 @@ Titre : MVP validé par 12 utilisateurs
 Description : Nous avons lancé la première version de l’outil, collecté 12 retours en 3 jours, et corrigé le point de friction sur l’inscription.</code></pre>
                         </div>
 
-                        <h2>5. Certifier un jalon</h2>
+                        <h2>6. Certifier un jalon</h2>
                         <p>
                             Une fois votre preuve ajoutée, vous pouvez la
                             rattacher à un jalon du projet. Cela permet de créer
@@ -243,13 +308,14 @@ Description : Nous avons lancé la première version de l’outil, collecté 12 
                             </li>
                         </ul>
 
-                        <h2>Ce que vous gagnez</h2>
+                        <h2>7. Vérification finale</h2>
                         <p>
-                            À la fin de ce parcours, vous disposez d’une
-                            trajectoire publique, exploitable par les
-                            recruteurs, les entreprises et la communauté. Cela
-                            ne ressemble pas à un profil figé. C’est une preuve
-                            concrète de progression, de travail et d’attention.
+                            Votre onboarding est crédible si votre identité est
+                            claire, votre profil public lisible, votre premier
+                            ARC structuré, et votre preuve reliée à un jalon
+                            réel. Si le produit final diffère de cette
+                            structure, il faut la corriger ou la marquer comme
+                            <strong>à confirmer</strong> avant publication.
                         </p>
                     </article>
                 </div>

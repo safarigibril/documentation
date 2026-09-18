@@ -38,6 +38,42 @@
             name="twitter:image"
             content="https://docs.xera1.xyz/xera1_docs.jpeg"
         />
+        <link rel="alternate" type="text/markdown" href="XERA1_COMPLETE_REFERENCE.md" title="Documentation complète de XERA1 (Markdown)" />
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "TechArticle",
+                "headline": "Trust & verification | XERA1 Docs",
+                "description": "Comprenez la vérification XERA1, la provenance des médias et les signaux de confiance des profils.",
+                "inLanguage": "fr",
+                "mainEntityOfPage": "https://docs.xera1.xyz/trust-and-verification.html",
+                "isPartOf": {
+                    "@type": "WebSite",
+                    "name": "XERA1 Docs",
+                    "url": "https://docs.xera1.xyz/"
+                }
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Documentation",
+                        "item": "https://docs.xera1.xyz/docs.html"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Trust & verification",
+                        "item": "https://docs.xera1.xyz/trust-and-verification.html"
+                    }
+                ]
+            }
+        </script>
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
@@ -104,6 +140,15 @@
                             transparente et lisible.
                         </p>
 
+                        <div class="note-box">
+                            <strong>Règle de prudence :</strong> le badge, la
+                            provenance, le C2PA, le statut IA et les règles de
+                            sécurité ne sont pas implémentés dans ce workspace
+                            de manière vérifiable. Ces éléments doivent être
+                            testés dans le produit réel avant d’être présentés
+                            comme des garanties opérationnelles.
+                        </div>
+
                         <h2>1. Le badge de certification XERA1</h2>
                         <p>
                             Le badge de certification atteste qu’un profil ou
@@ -121,6 +166,15 @@
                             </li>
                         </ul>
 
+                        <div class="callout">
+                            <strong>Important :</strong> tant que les critères
+                            exacts ne sont pas publiés et testés, il faut parler
+                            de
+                            <strong
+                                >critères de certification à confirmer</strong
+                            >, pas d’une garantie absolue.
+                        </div>
+
                         <h2>2. Provenance média et transparence</h2>
                         <p>
                             Les médias publiés sur XERA1 doivent être lisibles
@@ -129,13 +183,43 @@
                             du récit importent autant que le support lui-même.
                         </p>
 
-                        <div class="callout">
-                            <strong>Best practice :</strong> Expliquez ce que le
-                            média montre, le contexte, les résultats obtenus et
-                            la date ou l’étape associée.
-                        </div>
+                        <ul>
+                            <li>conserver le média original ;</li>
+                            <li>décrire le contexte de création ;</li>
+                            <li>lier la preuve à un ARC ou un jalon ;</li>
+                            <li>
+                                indiquer les outils utilisés et les
+                                modifications importantes ;
+                            </li>
+                            <li>
+                                déclarer si le média est généré ou modifié par
+                                IA.
+                            </li>
+                        </ul>
 
-                        <h2>3. Sécurité et signalement</h2>
+                        <h2>3. C2PA et statut IA</h2>
+                        <p>
+                            La provenance technique peut aider à expliquer
+                            l’histoire d’un fichier, mais elle ne remplace pas
+                            une vérification humaine. Un document portant une
+                            signature C2PA n’est pas automatiquement “vrai” dans
+                            tous les sens du terme, et une détection IA n’est
+                            pas parfaite sans règles publiques sur ses limites.
+                        </p>
+
+                        <ul>
+                            <li>qui déclare le statut IA ?</li>
+                            <li>
+                                est-ce un signal utilisateur ou un signal
+                                automatique ?
+                            </li>
+                            <li>peut-il être corrigé ?</li>
+                            <li>
+                                que signifie une valeur inconnue ou non fiable ?
+                            </li>
+                        </ul>
+
+                        <h2>4. Sécurité et signalement</h2>
                         <p>
                             La plateforme permet de protéger la qualité du
                             réseau et d’éviter les contenus trompeurs ou
@@ -148,11 +232,15 @@
                             <li>revérifier l’origine et le contexte,</li>
                             <li>
                                 maintenir une sphère de confiance propre aux
-                                builders.
+                                builders,
+                            </li>
+                            <li>
+                                utiliser des mots de passe uniques et des règles
+                                de sécurité du compte.
                             </li>
                         </ul>
 
-                        <h2>4. Pourquoi c’est important</h2>
+                        <h2>5. Pourquoi c’est important</h2>
                         <p>
                             Sans signal de confiance, la plateforme se détériore
                             en bruit. XERA1 s’appuie sur la notion de “preuve de

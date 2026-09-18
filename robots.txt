@@ -1,4 +1,23 @@
 User-agent: *
 Allow: /
 
+# AI Agents specific entries for high efficiency crawl
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Semantic full text version for RAG systems
+Link: <https://docs.xera1.xyz/XERA1_COMPLETE_REFERENCE.md>; rel="alternate"; type="text/markdown"
+
 Sitemap: https://docs.xera1.xyz/sitemap.xml
